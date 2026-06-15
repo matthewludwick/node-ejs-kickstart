@@ -18,20 +18,32 @@ app.use(express.static(__dirname + '/public'));
 
 //index/home URL
 app.get('/', (req, res) => {
-    const title = 'Home Page';
+    const title = "Matt's Favorite Japanese Music";
     res.render('pages/index', { title });
 });
 
-//about URL
-app.get('/about', (req, res) => {
-    const title = 'About Page';
-    res.render('pages/about', { title });
+// Tomoko Aran page
+app.get('/tomoko', (req, res) => {
+    const title = 'Tomoko Aran';
+    res.render('pages/tomoko', { title });
 });
 
-//games URL
-app.get('/games', (req, res) => {
-    const title = 'Game Page';
-    res.render('pages/games', { title });
+// Hiroshi Sato page
+app.get('/hiroshi', (req, res) => {
+    const title = 'Hiroshi Sato';
+    res.render('pages/hiroshi', { title });
+});
+
+// Yellow Magic Orchestra page
+app.get('/YMO', (req, res) => {
+    const title = 'Yellow Magic Orchestra';
+    res.render('pages/YMO', { title });
+});
+
+// Ryuichi Sakamoto page
+app.get('/ryuichi', (req, res) => {
+    const title = 'Ryuichi Sakamoto';
+    res.render('pages/ryuichi', { title });
 });
 
 // ==========================================
